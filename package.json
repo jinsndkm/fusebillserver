@@ -1,0 +1,28 @@
+{
+  "name": "ReST-API",
+  "version": "1.0.0",
+  "description": "A simple RESTFul API created using nodejs that talks to Mongodb database",
+  "main": "server.js",
+  "author": "Rageesh PK",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compass": "^0.1.1",
+    "cors": "^2.8.5",
+    "csv-write-stream": "^2.0.0",
+    "csv-writer": "^1.2.0",
+    "dateformat": "^3.0.3",
+    "express": "^4.13.3",
+    "fs": "0.0.1-security",
+    "json-stringify-safe": "^5.0.1",
+    "mongoose": "^4.1.3",
+    "mysql": "^2.16.0",
+    "node": "^11.4.0",
+    "node-restful": "^0.2.2",
+    "node-stringify": "^0.2.1",
+    "nodemon": "^1.18.9",
+    "request": "^2.88.0",
+    "server": "^1.0.18",
+    "stripe": "^6.20.0"
+  }
+}
