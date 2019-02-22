@@ -19,6 +19,7 @@ Subscriptions.getSubscriptions= function allServices(result) {
             "Content-Type": "application/json"
         },
         "url": "https://secure.fusebill.com/v1/customers/4978199/subscriptions?query=status:Active"
+        
 
     }, (error, response, body) => {
         if (error) {

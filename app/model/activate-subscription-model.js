@@ -10,8 +10,8 @@ const dateFormat = require('dateformat');
 
 // global.globalString="Basic MDo5NTZnYTltU0RqMmVBeU51dzluc1dtZzdUZ2t4enJ4ek04ck1FTERIcVRQNDBTY2wyU2F5THhCNGR5eDlPdDdk";
 
-//global.globalString="Basic MDpRU2tCZlRkVGVVVGVYWTRyNllmZEhITlRKMEhmWHphdXZ5cEFmNFpYOEMwTnEwUm5sZHRlRXpWS2ttU3Z2dVdH";
 global.globalString="Basic MDpnZFg5WTFqNU5sME9HbTdIVHV2aDRUYkxRRmhxM0FpVTVQdk1SdmxzdEdFdW9ldkFkeHlxNmZKNjAxbDNPdFRn";
+//global.globalString="Basic MDpnZFg5WTFqNU5sME9HbTdIVHV2aDRUYkxRRmhxM0FpVTVQdk1SdmxzdEdFdW9ldkFkeHlxNmZKNjAxbDNPdFRn";
 
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
