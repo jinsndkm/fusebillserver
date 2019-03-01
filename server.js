@@ -65,3 +65,44 @@ app.use(bodyParser.json());
 
 var routes = require('./app/routes/approutes'); //importing route
 routes(app); //register the route
+
+
+//Cron job
+
+var cron = require('node-cron');
+ 
+cron.schedule('* * * * *', () => {
+  console.log('running a task every minute');
+
+  const fs = require('fs');
+const path = require('path');
+
+let filename = 'subscription-details.csv';
+let src = path.join(__dirname+"/app/model/", filename);
+let destDir = path.join("//192.168.1.101/Common Drive", 'FUSEBILL');
+
+
+fs.access(destDir, (err) => {
+  if(err)
+    fs.mkdirSync(destDir);
+
+  copyFile(src, path.join(destDir, filename));
+});
+
+
+function copyFile(src, dest) {
+
+  let readStream = fs.createReadStream(src);
+
+  readStream.once('error', (err) => {
+    console.log(err);
+  });
+
+  readStream.once('end', () => {
+    console.log('done copying');
+  });
+
+  readStream.pipe(fs.createWriteStream(dest));
+}
+
+});
